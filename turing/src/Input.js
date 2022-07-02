@@ -82,7 +82,7 @@ class Input extends Component{
         let satu; let dua;
         let opr = this.props.variable.delimiter
         console.log(opr)
-        opr == null ?  satu = <span className="input-group-text no-right input-size" id="Input 1">Input 1</span> :
+         == null ?  satu = <span className="input-group-text no-right input-size" id="Input 1">Input 1</span> :
             opr === 'exp' ? satu = <span className="input-group-text no-right lebar input-size" id="Input 1">Pangkat</span> :  
                 opr === '!' ? satu = <span className="input-group-text no-right lebar input-size" id="Input 1">Input</span> :
                     opr === 'log' ? satu = <span className="input-group-text no-right lebar input-size" id="Input 1">Numerus</span> :
