@@ -1,4 +1,4 @@
-# The-Automata
+# Project Turing Machine for Calculation
 
 Step-by-step :
 Install all requirements ( ```nodejs``` )
