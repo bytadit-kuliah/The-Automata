@@ -67,7 +67,7 @@ class Faktorial extends Component {
     init(){
         this.stateUpdate(this.state.iter, 0)
     }
-    nol(){
+    q0(){
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter+1, 1) : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
