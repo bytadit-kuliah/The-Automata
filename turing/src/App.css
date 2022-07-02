@@ -1,0 +1,64 @@
+.scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.content{
+  margin: auto;
+}
+.box {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+  display: inline-block;
+  width: 32px;
+  height: 48px;
+  margin: 2px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 48px;
+}
+.white{
+  border-style: hidden hidden solid hidden;
+  border-width: 10px;
+}
+.m-lay{
+  width: 85%;
+  margin: 2.5% auto;
+}
+.bttn:hover{
+  color: #FF96AD;
+}
+.btn:focus{
+  color: #FFF5FD;
+  background-color: #005A8D;
+  box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+}
+.bttn{
+  background-color: #022E57;
+  border: none;
+  color: white;
+  margin: 2px;
+  padding: 4px 8px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.no-right{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.lebar{
+  width: 84px;
+  text-align: center;
+}
+.input-size{
+  max-width: 256px;
+  height: 32px;
+}
+.no-left{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

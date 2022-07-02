@@ -1,0 +1,19 @@
+.wrapper {
+    justify-content: center;
+    align-items: center;
+    background-color: #07575b;
+    width: 1850px;
+    padding-top: 40px;
+    padding-left: 60px;
+}
+
+.konten {
+    background-color: #C4DFE6;
+    height: 860px;
+    border-radius: 25px;
+    padding-top: 20px;
+}
+.footer {
+    text-align: center;
+    color: white;
+}
