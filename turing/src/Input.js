@@ -60,7 +60,7 @@ class Input extends Component{
                     <input className='btn bttn' type="submit" id="delimiter" value="-" onClick={() => this.handleClick(tape, '-')}/>
                     <input className='btn bttn' type="submit" id="delimiter" value="/" onClick={() => this.handleClick(tape, '/')}/>
                     <input className='btn bttn' type="submit" id="delimiter" value="x" onClick={() => this.handleClick(tape, 'x')}/>
-                    <input className='btn bttn' type="submit" id="delimiter" value="%" onClick={() => this.handleClick(tape, '%')}/>
+                    {/* <input className='btn bttn' type="submit" id="delimiter" value="%" onClick={() => this.handleClick(tape, '%')}/> */}
                     <input className='btn bttn' type="submit" id="delimiter" value="log" onClick={() => this.handleClick(tape, 'log')}/>
                     <input className='btn bttn' type="submit" id="delimiter" value="exp" onClick={() => this.handleClick(tape, 'exp')}/>
                     <input className='btn bttn' type="submit" id="delimiter" value="!" onClick={() => this.handleClick(tape, '!')}/>
