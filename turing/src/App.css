@@ -23,10 +23,12 @@
 }
 .m-lay{
   width: 85%;
-  margin: 2.5% auto;
+  margin: 1.5% auto;
+  border-radius: 10px;
 }
 .bttn:hover{
-  color: #FF96AD;
+  background-color: #DA2165;
+  color:white;
 }
 .btn:focus{
   color: #FFF5FD;
@@ -34,7 +36,7 @@
   box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
 }
 .bttn{
-  background-color: #022E57;
+  background-color: #0C1137;
   border: none;
   color: white;
   margin: 2px;
@@ -61,4 +63,9 @@
 .no-left{
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.input-group-text{
+  background-color: #0C1137;
+  color:white;
 }

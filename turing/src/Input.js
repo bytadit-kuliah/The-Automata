@@ -54,7 +54,7 @@ class Input extends Component{
         })
         return(
             <div>
-                <h4>Operasi</h4>
+                <h4 class="mt-2">Operasi</h4>
                 <div className="btn-group mb-1" role="group" >
                     <input className='btn bttn' type="submit" id="delimiter" value="+" onClick={() => this.handleClick(tape, '+')}/>
                     <input className='btn bttn' type="submit" id="delimiter" value="-" onClick={() => this.handleClick(tape, '-')}/>
@@ -65,7 +65,7 @@ class Input extends Component{
                     <input className='btn bttn' type="submit" id="delimiter" value="exp" onClick={() => this.handleClick(tape, 'exp')}/>
                     <input className='btn bttn' type="submit" id="delimiter" value="!" onClick={() => this.handleClick(tape, '!')}/>
                 </div>
-                <h4>User Input Translate</h4>
+                <h4 class="my-3">User Input Translate</h4>
                 <div className="scroll-container" >
                     
                     {variable.blank}
@@ -103,10 +103,10 @@ class Input extends Component{
                         {dua}
                         <input className='form-control no-left input-size' type="text" id="second" onChange={this.handleChange}/>
                     </div>
-                    <br></br>
+                    
                     {this.tapeMaker()}
                 </form>
-                <h4>Turing Machine :</h4>
+                <h4 class="my-3">Turing Machine :</h4>
             </div>
         )
     }
