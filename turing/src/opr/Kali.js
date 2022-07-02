@@ -20,18 +20,18 @@ class Kali extends Component {
     start(){
         switch (this.state.pos) {
             case -1 : this.init();      break;
-            case 0  : this.nol();       break;
-            case 1  : this.siji();      break;
-            case 2  : this.loro();      break;
-            case 3  : this.telu();      break;
-            case 4  : this.papat();     break;
-            case 5  : this.limo();      break;
-            case 6  : this.enem();      break;
-            case 7  : this.pitu();      break;
-            case 8  : this.wolu();      break;
-            case 9  : this.songo();     break;
-            case 10 : this.sepuluh();   break;
-            case 11 : this.sewelas();   break;
+            case 0  : this.q0();       break;
+            case 1  : this.q1();      break;
+            case 2  : this.q2();      break;
+            case 3  : this.q3();      break;
+            case 4  : this.q4();     break;
+            case 5  : this.q5();      break;
+            case 6  : this.q6();      break;
+            case 7  : this.q7();      break;
+            case 8  : this.q8();      break;
+            case 9  : this.q9();     break;
+            case 10 : this.q10();   break;
+            case 11 : this.q11();   break;
             default : break;
         }
     }
@@ -44,7 +44,7 @@ class Kali extends Component {
     init(){
         this.stateUpdate(this.state.iter, 0)
     }
-    nol(){
+    q0(){
         if(this.state.newList[this.state.iter] === 0){
             this.listUpdate('B', this.state.iter)
             this.stateUpdate(this.state.iter+1, 1)
@@ -53,14 +53,14 @@ class Kali extends Component {
             this.stateUpdate(this.state.iter+1, 9)
         }
     }
-    siji(){
+    q1(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter+1, 1)
         }else if(this.state.newList[this.state.iter] === 1){
             this.stateUpdate(this.state.iter+1, 2)
         }
     }
-    loro(){
+    q2(){
         if(this.state.newList[this.state.iter] === 0){
             this.listUpdate('B', this.state.iter)
             this.stateUpdate(this.state.iter+1, 3)
@@ -68,7 +68,7 @@ class Kali extends Component {
             this.stateUpdate(this.state.iter-1, 7)
         }
     }
-    telu(){
+    q3(){
         console.log("\nhead "+ this.state.newList[this.state.iter] )
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter+1, 3)
@@ -76,7 +76,7 @@ class Kali extends Component {
             this.stateUpdate(this.state.iter+1, 4)
         }
     }
-    papat(){
+    q4(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter+1, 4)
         }else if(this.state.newList[this.state.iter] === 'B' ){
@@ -85,21 +85,21 @@ class Kali extends Component {
             this.stateUpdate(this.state.iter-1, 5)
         }
     }
-    limo(){
+    q5(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter-1, 5)
         }else if(this.state.newList[this.state.iter] === 1){
             this.stateUpdate(this.state.iter-1, 6)
         }
     }
-    enem(){
+    q6(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter-1, 6)
         }else if(this.state.newList[this.state.iter] === "B"){
             this.stateUpdate(this.state.iter+1, 2)
         }
     }
-    pitu(){
+    q7(){
         if(this.state.newList[this.state.iter] === 1){
             this.stateUpdate(this.state.iter-1, 8)
         }else if(this.state.newList[this.state.iter] === "B"){
@@ -108,14 +108,14 @@ class Kali extends Component {
             this.stateUpdate(this.state.iter-1, 7)
         }
     }
-    wolu(){
+    q8(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter-1, 8)
         }else if(this.state.newList[this.state.iter] === "B"){
             this.stateUpdate(this.state.iter+1, 0)
         }
     }
-    songo(){
+    q9(){
         if(this.state.newList[this.state.iter] === 0){
             this.listUpdate('B', this.state.iter)
             this.stateUpdate(this.state.iter+1, 9)
@@ -124,7 +124,7 @@ class Kali extends Component {
             this.stateUpdate(this.state.iter+1, 10)
         }
     }
-    sepuluh(){
+    q10(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter+1, 10)
         }else if(this.state.newList[this.state.iter] === "B"){
@@ -133,7 +133,7 @@ class Kali extends Component {
             this.stateUpdate(this.state.iter+1, 11)
         }
     }
-    sewelas(){
+    q11(){
         console.log("ENDED" )
         console.log("ENDED" )
     }

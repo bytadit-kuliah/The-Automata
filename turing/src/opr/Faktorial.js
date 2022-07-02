@@ -19,42 +19,42 @@ class Faktorial extends Component {
     start(){
         switch (this.state.pos) {
             case -1 : this.init();          break;
-            case 0  : this.nol();           break;
-            case 1  : this.siji();          break;
-            case 2  : this.loro();          break;
-            case 3  : this.telu();          break;
-            case 4  : this.papat();         break;
-            case 5  : this.limo();          break;
-            case 6  : this.enem();          break;
-            case 7  : this.pitu();          break;
-            case 8  : this.wolu();          break;
-            case 9  : this.songo();         break;
-            case 10 : this.sepuluh();       break;
-            case 11 : this.sewelas();       break;
-            case 12 : this.rolas();         break;
-            case 13 : this.telulas();       break;
-            case 14 : this.patbelas();      break;
-            case 15 : this.limolas();       break;
-            case 16 : this.nembelas();      break;
-            case 17 : this.pitulas();       break;
-            case 18 : this.wolulas();       break;
-            case 19 : this.songolas();      break;
-            case 20 : this.rongpuluh();     break;
-            case 21 : this.selikur();       break;
-            case 22 : this.rolikur();       break;
-            case 23 : this.telulikur();     break;
-            case 24 : this.patlikur();      break;
-            case 25 : this.selawe();        break;
-            case 26 : this.nemlikur();      break;
-            case 27 : this.pitulikur();      break; //New state after finding error
-            case 28  : this.wolulikur();           break;
-            case 29  : this.songolikur();          break;
-            case 30  : this.telungpuluh();          break;
-            case 31  : this.telusiji();          break;
-            case 32  : this.teluloro();         break;
-            case 33  : this.telutelu();          break;
-            case 34  : this.telupapat();          break;
-            case 35  : this.telulimo();          break;
+            case 0  : this.q0();           break;
+            case 1  : this.q1();          break;
+            case 2  : this.q2();          break;
+            case 3  : this.q3();          break;
+            case 4  : this.q4();         break;
+            case 5  : this.q5();          break;
+            case 6  : this.q6();          break;
+            case 7  : this.q7();          break;
+            case 8  : this.q8();          break;
+            case 9  : this.q9();         break;
+            case 10 : this.q10();       break;
+            case 11 : this.q11();       break;
+            case 12 : this.q12();         break;
+            case 13 : this.q13();       break;
+            case 14 : this.q14();      break;
+            case 15 : this.q15();       break;
+            case 16 : this.q16();      break;
+            case 17 : this.q17();       break;
+            case 18 : this.q18();       break;
+            case 19 : this.q19();      break;
+            case 20 : this.q20();     break;
+            case 21 : this.q21();       break;
+            case 22 : this.q22();       break;
+            case 23 : this.q23();     break;
+            case 24 : this.q24();      break;
+            case 25 : this.q25();        break;
+            case 26 : this.q26();      break;
+            case 27 : this.q27();      break; //New state after finding error
+            case 28  : this.q28();           break;
+            case 29  : this.q29();          break;
+            case 30  : this.q30();          break;
+            case 31  : this.q31();          break;
+            case 32  : this.q32();         break;
+            case 33  : this.q33();          break;
+            case 34  : this.q34();          break;
+            case 35  : this.q35();          break;
             default : break;
         }
     }
@@ -72,7 +72,7 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    siji(){
+    q1(){
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
         if(this.state.newList[this.state.iter] === 0){
@@ -82,7 +82,7 @@ class Faktorial extends Component {
             this.stateUpdate(this.state.iter+1, 5)
         }
     }
-    loro(){
+    q2(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter+1, 2)
         }else if(this.state.newList[this.state.iter] === 1){
@@ -95,14 +95,14 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    telu(){
+    q3(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter-1, 3) :
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter-1, 4)
             : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    papat(){
+    q4(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter-1, 4)
         }else if(this.state.newList[this.state.iter] === 'X'){
@@ -112,14 +112,14 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    limo(){
+    q5(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter+1, 5) :
         (this.state.newList[this.state.iter] === "B") ? this.stateUpdate(this.state.iter-1, 6)
             : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    enem(){
+    q6(){
         if(this.state.newList[this.state.iter] === 0){
             this.listUpdate(1, this.state.iter)
             this.stateUpdate(this.state.iter-1, 7)
@@ -130,14 +130,14 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    pitu(){
+    q7(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter-1, 7) :
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter+1, 1)
             : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    wolu(){
+    q8(){
         if(this.state.newList[this.state.iter] === 0){
             this.listUpdate('B', this.state.iter)
             this.stateUpdate(this.state.iter-1, 9)
@@ -148,13 +148,13 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    songo(){
+    q9(){
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter-1, 10) 
             : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    sepuluh(){
+    q10(){
         if(this.state.newList[this.state.iter] === 0){
             this.listUpdate('X', this.state.iter)
             this.stateUpdate(this.state.iter-1, 11)
@@ -164,14 +164,14 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    sewelas(){
+    q11(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter-1, 11) :
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter-1, 12) 
             : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    rolas(){
+    q12(){
         if(this.state.newList[this.state.iter] === 0){
             this.listUpdate('X', this.state.iter)
             this.stateUpdate(this.state.iter+1, 13)
@@ -185,14 +185,14 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    telulas(){
+    q13(){
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter+1, 14) :
         (this.state.newList[this.state.iter] === 'X') ? this.stateUpdate(this.state.iter+1, 13) 
             : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    patbelas(){
+    q14(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter+1, 14) :
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter+1, 15) :
         (this.state.newList[this.state.iter] === "X") ? this.stateUpdate(this.state.iter+1, 14)
@@ -200,7 +200,7 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    limolas(){
+    q15(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter+1, 15)
         }else if(this.state.newList[this.state.iter] === "B"){
@@ -211,14 +211,14 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    nembelas(){
+    q16(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter-1, 16) :
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter-1, 17) 
             : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    pitulas(){
+    q17(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter-1, 17) :
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter-1, 12) :
         (this.state.newList[this.state.iter] === 'X') ? this.stateUpdate(this.state.iter-1, 17)
@@ -226,7 +226,7 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    wolulas(){
+    q18(){
         if(this.state.newList[this.state.iter] === 1){
             this.stateUpdate(this.state.iter+1, 19)
         }else if(this.state.newList[this.state.iter] === 'X'){
@@ -236,14 +236,14 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    songolas(){
+    q19(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter+1, 19) :
         (this.state.newList[this.state.iter] === 'X') ? this.stateUpdate(this.state.iter-1, 20) 
             : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    rongpuluh(){
+    q20(){
         if(this.state.newList[this.state.iter] === 0){
             this.listUpdate('X', this.state.iter)
             this.stateUpdate(this.state.iter-1, 11)
@@ -253,7 +253,7 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    selikur(){
+    q21(){
         if(this.state.newList[this.state.iter] === 1){
             this.stateUpdate(this.state.iter-1, 22)
         }else if(this.state.newList[this.state.iter] === 'X'){
@@ -263,7 +263,7 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    rolikur(){
+    q22(){
         if(this.state.newList[this.state.iter] === 0){
             this.listUpdate(1, this.state.iter)
             this.stateUpdate(this.state.iter-1, 23)
@@ -273,7 +273,7 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    telulikur(){
+    q23(){
         if(this.state.newList[this.state.iter] === 0){
             this.listUpdate(1, this.state.iter)
             this.stateUpdate(this.state.iter-1, 23)
@@ -283,7 +283,7 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    patlikur(){
+    q24(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter+1, 24) :
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter+1, 24) :
         (this.state.newList[this.state.iter] === 'B') ? this.stateUpdate(this.state.iter-1, 25) 
@@ -291,14 +291,14 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    selawe(){
+    q25(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter-1, 25) :
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter-1, 26) 
             : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    nemlikur(){
+    q26(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter+1, 31) :
         (this.state.newList[this.state.iter] === "B") ? this.stateUpdate(this.state.iter+1, 31) : //After update
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter+1, 27) 
@@ -306,7 +306,7 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    pitulikur(){
+    q27(){
         if(this.state.newList[this.state.iter] === 1){
             this.listUpdate(0, this.state.iter)
             this.stateUpdate(this.state.iter+1, 28)
@@ -314,17 +314,17 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    wolulikur(){
+    q28(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter+1, 28) :
         (this.state.newList[this.state.iter] === 'B') ? this.stateUpdate(this.state.iter-1, 30) 
             : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    songolikur(){
+    q29(){
          console.log("IF THIS MESSAGE IS PRINTER SO IT ERROR")
     }
-    telungpuluh(){
+    q30(){
         if(this.state.newList[this.state.iter] === 0){
             this.listUpdate('B', this.state.iter)
             this.stateUpdate(this.state.iter-1, 25)
@@ -334,13 +334,13 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    telusiji(){
+    q31(){
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter+1, 32) 
             : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    teluloro(){
+    q32(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter+1, 32)
         }else if(this.state.newList[this.state.iter] === 'B'){
@@ -350,13 +350,13 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    telutelu(){
+    q33(){
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter+1, 34) 
             : console.log("Outside Range")
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    telupapat(){
+    q34(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter+1, 34)
         }else if(this.state.newList[this.state.iter] === 'X'){
@@ -366,7 +366,7 @@ class Faktorial extends Component {
         console.log("iter " +  this.state.iter)
         console.log("state " + this.state.pos)
     }
-    telulimo(){
+    q35(){
         console.log("ENDED " )
     }
 

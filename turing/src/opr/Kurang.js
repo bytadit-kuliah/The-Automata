@@ -21,13 +21,13 @@ class Kurang extends Component {
     start(){
         switch (this.state.pos) {
             case -1 : this.init();      break;
-            case 0  : this.nol();      break;
-            case 1  : this.siji();     break;
-            case 2  : this.loro();    break;
-            case 3  : this.telu();     break;
-            case 4  : this.papat();     break;
-            case 5  : this.limo();     break;
-            case 6  : this.enem();     break;
+            case 0  : this.q0();      break;
+            case 1  : this.q1();     break;
+            case 2  : this.q2();    break;
+            case 3  : this.q3();     break;
+            case 4  : this.q4();     break;
+            case 5  : this.q5();     break;
+            case 6  : this.q6();     break;
             default :   break;
         }
     }
@@ -40,17 +40,17 @@ class Kurang extends Component {
     init(){
         this.stateUpdate(this.state.iter, 0)
     }
-    nol(){
+    q0(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter+1, 0) 
             : (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter+1, 1) 
                 : console.log("Err at " + this.state.pos)
     }
-    siji(){
+    q1(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter+1, 1) 
             : (this.state.newList[this.state.iter] === 'B') ? this.stateUpdate(this.state.iter-1, 2) 
                 : console.log("Err at " + this.state.pos)
     }
-    loro(){
+    q2(){
         if (this.state.newList[this.state.iter] === 0) {
             this.listUpdate('B', this.state.iter) 
             this.stateUpdate(this.state.iter-1, 3)
@@ -59,21 +59,21 @@ class Kurang extends Component {
             this.stateUpdate(this.state.iter-1, 6)
         } 
     }
-    telu(){
+    q3(){
         (this.state.newList[this.state.iter] === 0) ? this.stateUpdate(this.state.iter-1, 3) :
         (this.state.newList[this.state.iter] === 1) ? this.stateUpdate(this.state.iter-1, 4) 
             : console.log("Err at " + this.state.pos)
     }
-    papat(){
+    q4(){
         (this.state.newList[this.state.iter] === 0) ?this.stateUpdate(this.state.iter-1, 4) :
         (this.state.newList[this.state.iter] === 'B' )? this.stateUpdate(this.state.iter+1, 5) 
             : console.log("Err at " + this.state.pos)
     }
-    limo(){
+    q5(){
         if(this.state.newList[this.state.iter] === 0) { this.listUpdate('B', this.state.iter); this.stateUpdate(this.state.iter+1, 0)}
             else if(this.state.newList[this.state.iter] === 1){this.stateUpdate(this.state.iter-1, 6)}
     }
-    enem(){
+    q6(){
         console.log("ENDED")
         console.log("ENDED")
     }
