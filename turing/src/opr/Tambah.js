@@ -21,12 +21,12 @@ class Tambah extends Component {
     start(){
         switch (this.state.pos) {
             case -1 : this.init();  break;
-            case 0  : this.nol();   break;
-            case 1  : this.siji();  break;
-            case 2  : this.loro();  break;
-            case 3  : this.telu();  break;
-            case 4  : this.papat(); break;
-            case 5  : this.limo();  break;
+            case 0  : this.q0();   break;
+            case 1  : this.q1();  break;
+            case 2  : this.q2();  break;
+            case 3  : this.q3();  break;
+            case 4  : this.q4(); break;
+            case 5  : this.q5();  break;
             default :   break;
         }
     }
@@ -39,7 +39,7 @@ class Tambah extends Component {
     init(){
         this.stateUpdate(this.state.iter, 0)
     }
-    nol(){
+    q0(){
         if(this.state.newList[this.state.iter] === 0){
             this.listUpdate('B', this.state.iter)
             this.stateUpdate(this.state.iter+1, 1)
@@ -48,7 +48,7 @@ class Tambah extends Component {
             this.stateUpdate(this.state.iter+1, 5)
         }
     }
-    siji(){
+    q1(){
         console.log("iter " +  this.state.iter)
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter+1, 1)
@@ -56,7 +56,7 @@ class Tambah extends Component {
             this.stateUpdate(this.state.iter+1, 2)
         }
     }
-    loro(){
+    q2(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter+1, 2)
         }else if(this.state.newList[this.state.iter] === 'B' ){
@@ -65,21 +65,21 @@ class Tambah extends Component {
             this.stateUpdate(this.state.iter-1, 3)
         }
     }
-    telu(){
+    q3(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter-1, 3)
         }else if(this.state.newList[this.state.iter] === 1){
             this.stateUpdate(this.state.iter-1, 4)
         }
     }
-    papat(){
+    q4(){
         if(this.state.newList[this.state.iter] === 0){
             this.stateUpdate(this.state.iter-1, 4)
         }else if(this.state.newList[this.state.iter] === 'B' ){
             this.stateUpdate(this.state.iter+1, 0)
         }
     }
-    limo(){
+    q5(){
         console.log("ENDED")
         console.log("ENDED")
     }
