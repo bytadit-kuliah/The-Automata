@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import './App.css';
 import Input from './Input'
-import Tambah from './opr/Tambah';
-import Kurang from './opr/Kurang';
-import Kali from './opr/Kali';
-import Bagi from './opr/Bagi';
-import Mod from './opr/Mod';
-import Log from './opr/Log';
-import Pangkat from './opr/Pangkat';
-import Faktorial from './opr/Faktorial';
+import Tambah from './operasi/Tambah';
+import Kurang from './operasi/Kurang';
+import Kali from './operasi/Kali';
+import Bagi from './operasi/Bagi';
+import Log from './operasi/Log';
+import Pangkat from './operasi/Pangkat';
+import Faktorial from './operasi/Faktorial';
 
 class App extends Component{
   state = {
@@ -35,8 +34,7 @@ class App extends Component{
     opr === '+' ? operation = <Tambah variable={this.state}/> 
       : opr === '-' ? operation = <Kurang variable={this.state}/> 
         : opr === 'x' ? operation = <Kali variable={this.state}/>  
-          : opr === '/' ? operation = <Bagi variable={this.state}/>  
-            : opr === '%' ? operation = <Mod variable={this.state}/>  
+          : opr === '/' ? operation = <Bagi variable={this.state}/>
               : opr === 'log' ? operation = <Log variable={this.state}/> 
                 : opr === 'exp' ? operation = <Pangkat variable={this.state}/>
                   : opr === '!' ? operation = <Faktorial variable={this.state}/> 

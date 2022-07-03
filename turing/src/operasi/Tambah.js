@@ -113,12 +113,11 @@ class Tambah extends Component {
         this.setState({
             newList: [],
             iter: 1,
-            pos: -1,  //-1 karena baru kepikiran di akhir kalau pas initiate tu belum dirubah
+            pos: -1,  //-1 karena kalau initiate tu belum dirubah
             auto: 'Auto',
             manual: 'Start'
         }, () => console.log(this.state.newList))
     }
-
 
     tapeMaker = (props) =>{
         const print = this.state.newList.map((val, i) => {
